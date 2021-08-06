@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+
+    <!-- google font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="stylesheets/shop.css" />
+    <link rel="stylesheet" href="stylesheets/homePage.css" />
+
+  </head>
+  <body>
+
+    <nav
+    id="mainNavbar"
+    class="navbar navbar-light navbar-expand-md py-0 fixed-top"
+  >
+    <a href="#" class="navbar-brand">CANDY</a>
+    <button
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navLinks"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/homePage.html" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="/shop.html" class="nav-link">SHOP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="panel pricing-table">
+      <div class="pricing-plan first-pricing-plan">
+        <img src="imgs/oneTypeCandy.jpg" alt="" class="pricing-img" />
+        <h2 class="pricing-header">Single Mix</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item" style="width: 105%">
+            Choose 1 type of candy to fill your jar!
+          </li>
+          <li class="pricing-features-item" style="width: 108%">
+            Comes in a small-sized jar
+          </li>
+        </ul>
+        <span class="pricing-price">$5.00</span>
+        <a href="#/" class="pricing-button">Buy Now!</a>
+      </div>
+
+      <div class="pricing-plan">
+        <img src="imgs/threeTypesCandy.jpeg" alt="" class="pricing-img" />
+        <h2 class="pricing-header">Triple Mix</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">
+            Choose 3 different types of candies to fill your jar!
+          </li>
+          <li class="pricing-features-item">Comes in a medium-sized jar</li>
+        </ul>
+        <span class="pricing-price">$10.00</span>
+        <a href="#/" class="pricing-button">Buy Now!</a>
+      </div>
+
+      <div class="pricing-plan">
+        <img src="imgs/sixTypesCandy.jpg" alt="" class="pricing-img" />
+        <h2 class="pricing-header">Octo Mix</h2>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">
+            Choose 6 different types of candies to fill your jar!
+          </li>
+          <li class="pricing-features-item">Comes in a large-sized jar</li>
+        </ul>
+        <span class="pricing-price">$15.00</span>
+        <a href="#/" class="pricing-button">Buy Now!</a>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+
+  </body>
+</html>
